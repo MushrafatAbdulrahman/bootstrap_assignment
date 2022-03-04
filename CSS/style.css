@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    /* background-color: red; */
+    height: 100%;
+    font-size: 15px;
+}
+
+.flex-style {
+    display: flex;
+    flex-direction: row;
+}
+
+header{
+    position: relative;
+    background-color: blue;
+    background-image: url("../Images/dining.jfif");
+    background-size: cover;
+    min-height: 100%;
+}
+
+header:before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); 
+}
+
+header * {
+    position: relative; /* Makes elements display above overlay. */
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    background-color: #af7b1b;
+    /* height: 6%; */
+}
+
+.nav-link ul {
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid white; */
+    justify-content: flex-end;
+}
+
+.nav-link ul li {
+    background-color: rgb(148, 105, 25);
+    display: inline-flex;
+    /* border: 1px solid white; */
+    /* text-align: center; */
+    margin: 0 2%;
+    padding: 12px 0px;
+    width: 20%;
+    height: 100%;
+}
+
+.nav-link ul li a {
+    text-decoration: none;
+    color: white;
+    /* border: 1px solid chocolate; */
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+
+.nav-link ul li a :hover{
+    background-color: white;
+    color: gold;
+}
+
+.logo {
+    /* border: 1px solid red; */
+    width: 30%;
+}
+
+.logo img {
+    /* border: 1px solid red; */
+    width: 20%;
+    height: 100%;
+}
+
+.nav-link {
+    /* border: 1px solid yellow; */
+    width: 70%;
+}
+
+.banner {
+    /* border: 1px solid white; */
+    /* height: 90%; */
+    color: white;
+    font-weight: bold;
+    margin-top: 20%;
+    text-align: center;
+}
+
+.banner h1 {
+    /* margin: 25% 0 0 25%; */
+    /* padding: 40% */
+    margin: 5px 0;
+}
+
+.banner h3 {
+    /* margin: 0 0 0 25%; */
+}
+
+.mobile-image  {
+    width: 50%;
+    height: 100%;
+}
+
+.orange {
+    color: rgb(199, 137, 23);
+}
+
+.orange-accent {
+    color: #af7b1b;
+}
